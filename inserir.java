@@ -4,11 +4,13 @@ public class arrays {
 
         Scanner scanner = new Scanner(System.in);
         String[] noms = new String[10];
-        for (int i = 0; i < noms.length; i++){
+
+        System.out.print("Quina posició vols sel·leccionar? ");
+        int posicio = scanner.nextInt();
+
+        for (int i = posicio; i < 10; i++){
             String nom = scanner.next();
             noms[i] = nom;
         }
-        int x = scanner.nextInt();
-        System.out.println(noms[x]);
     }
 }
